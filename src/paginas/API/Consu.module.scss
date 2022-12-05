@@ -1,0 +1,11 @@
+div{
+    width: 60%;
+    background-color: rgba(192, 181, 181, 0.712);
+    display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+    & h2{
+        width: 80%;
+   
+    }
+}

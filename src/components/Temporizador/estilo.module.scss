@@ -1,0 +1,41 @@
+html{
+    scroll-behavior: smooth;
+}
+div {
+    max-width: 500px;
+    margin: auto;
+
+    & input,
+    button {
+        width: 100%;
+        height: 50px;
+        margin: auto;
+
+
+
+    }
+
+}
+
+label {
+    font-size: 23px;
+
+}
+
+button {
+    cursor: pointer;
+    font-size: 23px;
+    text-transform: uppercase;
+}
+
+li {
+    cursor: pointer;
+}
+
+p {
+    font-size: 28px;
+
+}
+span{
+    font-size: 19px;
+}
