@@ -10,26 +10,25 @@ export default function FormularioElemento({ setNomes }: {
 }) {
 
     const [nome, setNome] = useState('')
+   
 
     function Adicionar(e: React.FormEvent<HTMLFormElement>) {
         e?.preventDefault()
         setNomes(antigas => [...antigas, { nome }])
-        if (Adicionar == Adicionar) {
-             
+        localStorage.setItem('key', nome)
+        if(nome){
+            setNome('')
         }
-
-
-
     }
-   
+
     return (
         <div>
 
             <form onSubmit={Adicionar} >
-                <input id="nome" required type="text" name="nome" value={nome} onChange={e => setNome(e.target.value)} />
-
+                <input placeholder="nome" id="nome"   type="text" name="nome" value={nome} onChange={e => setNome(e.target.value)} />
                 <button>Adicionar</button>
             </form>
+
         </div>
     )
 }

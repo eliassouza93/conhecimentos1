@@ -7,15 +7,13 @@ export default function ElementoInicial() {
     const [nomes, setNomes] = useState([{
         nome: ' ',
         
-
     }])
     return (
         <div>
 
             <FormularioElemento setNomes={setNomes} />
-        
             <Lista nomes={nomes} />
-
+            
 
 
         </div>
