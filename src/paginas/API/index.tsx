@@ -14,9 +14,9 @@ export default function ConsuAPI() {
 
     useEffect(() => {
         setCarregando(true)
-        axios.get('https://servicodados.ibge.gov.br/api/v2/censos/nomes/  ')
+        axios.get('  https://api.nasa.gov/techport/api/projects/17792?api_key=rMVBJFjParA97UWJmMKxhiOR2WwUhollUEcnB4WH')
             .then(resposta => {
-                setData(resposta.data)
+                console.log(resposta)
             }).catch((erro) => {
                 console.log(erro)
                 setCarregando(true)
@@ -32,9 +32,7 @@ export default function ConsuAPI() {
                 <div>
                     {data.map((user, index) => (
                         <div>
-                            <h2>{user.nome}</h2>
-                            <h3> {user.freq} </h3>
-
+                         
                         </div>
                     ))}
 
