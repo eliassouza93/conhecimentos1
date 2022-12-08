@@ -1,5 +1,5 @@
 import { useState } from "react"
-import Formulario147 from "./praticando/consumindo/Formulario"
+import Formulario147 from "./praticando"
 import style from './index.module.scss'
  
 
