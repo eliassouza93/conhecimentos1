@@ -1,9 +1,9 @@
 
 
-export default function Produtos() {
+export default function Ininio() {
     return (
         <div>
-            <h1>Produtos</h1>
+            <h1>Inicio</h1>
         </div>
     )
 }

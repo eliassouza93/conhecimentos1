@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom"
-
-
+import style from './menu.module.scss'
 export default function () {
     const rotas = [{
-        label: 'Produtos',
+        label: 'Inicio',
         to: '/'
     }, {
         label: 'Suporte',
@@ -16,11 +15,13 @@ export default function () {
         to: './outros'
     }]
     return (
-        <div>
+        <div className={style.tema} >
             {rotas.map((rota, index) => (
-                <ul key={index}>
+                <div key={index} >
+
                     <Link to={rota.to}> {rota.label} </Link>
-                </ul>
+
+                </div>
             ))}
 
 
