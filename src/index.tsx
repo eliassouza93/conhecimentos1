@@ -1,5 +1,6 @@
 
-import RotasPaginas from 'componentes1/paginas/routes';
+ 
+import ConsuAPI from 'paginas/API';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
@@ -9,7 +10,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <RotasPaginas />
+    <ConsuAPI />
   </React.StrictMode>
 );
 

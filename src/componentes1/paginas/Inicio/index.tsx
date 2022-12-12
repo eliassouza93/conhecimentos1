@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 
 export default function Inicio() {
     const [conta, setConta] = useState(0)
+
     useEffect(() => {
 
         console.log('página recarregada!')
@@ -29,3 +30,7 @@ export default function Inicio() {
         </div>
     )
 }
+
+ 
+  
+ 
