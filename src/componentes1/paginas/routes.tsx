@@ -3,11 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
 import Contato from "./Contato";
 import Outros from "./Outros";
-import Produtos from "./Produtos";
+import Produtos from "./Inicio";
 import Suporte from "./Suporte";
-
-
-
 
 export default function RotasPaginas() {
     return (
