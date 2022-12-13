@@ -7,9 +7,6 @@ export default function ConsuAPI() {
  
     const [clicar, setClicar] = useState(0)
 
-    setTimeout(() => {
-        setClicar(clicar + 1099999999000500)
-    }, 0);
  
     return (
         <div>
