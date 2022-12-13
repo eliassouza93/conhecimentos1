@@ -1,4 +1,5 @@
 import cardapio from '../../../data/cardapio.json'
+import PesquisadorAlura from '../pesquisador'
 import LiscaAlura from './lista'
 
 export default function BuscadorAlura() {
@@ -6,7 +7,10 @@ export default function BuscadorAlura() {
         <div>
             {cardapio.map((uni) => (
                 <LiscaAlura setPratos={cardapio} />
+             
+
             ))}
+            
 
         </div>
     )
