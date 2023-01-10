@@ -1,6 +1,6 @@
 
 
-import InicioAlura from 'aluroni/pages/inicio';
+import VoltaInicio from 'componentes1/Volta';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <InicioAlura />
+    <VoltaInicio />
   </React.StrictMode>
 );
 
