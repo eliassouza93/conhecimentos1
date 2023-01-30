@@ -1,5 +1,4 @@
 
-
 export default function Item({ nome, tempo }: { nome: string, tempo: string }) {
     return (
         <div>

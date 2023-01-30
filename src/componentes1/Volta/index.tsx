@@ -1,4 +1,6 @@
-import { useState } from "react"
+import axios from "axios"
+import { useEffect, useState } from "react"
+import Lista from "./Lista"
 
 
 export default function VoltaInicio() {
@@ -8,11 +10,34 @@ export default function VoltaInicio() {
     function contador() {
         setConta(conta + 1)
     }
+
+    const Pessoas = [
+        {
+            nome: 'Elias',
+            endereco: 'Rua altamiro guimaraes',
+            numero: 2223
+
+        }, {
+            nome: 'Ana',
+            endereco: 'Rua Meira gomes',
+            numero: 7623
+
+        }, {
+            nome: 'Belas',
+            endereco: 'Rua Dourados buzios',
+            numero: 76553
+
+        }
+    ]
+
+ 
     return (
         <div>
             <h1>Voltando depois da temporada!</h1>
 
             <button onClick={contador}>Adicionar</button>
+
+            <Lista setPessoas={Pessoas} />
 
 
             <h2> {conta} </h2>
