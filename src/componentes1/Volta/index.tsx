@@ -30,7 +30,10 @@ export default function VoltaInicio() {
         }
     ]
 
- 
+    const [nome, setNome] = useState('')
+    const [guarda, setGuarda] = useState('')
+
+
     return (
         <div>
             <h1>Voltando depois da temporada!</h1>
@@ -39,8 +42,9 @@ export default function VoltaInicio() {
 
             <Lista setPessoas={Pessoas} />
 
-
             <h2> {conta} </h2>
+             <label htmlFor="Nome">Nome</label>   
+            <input type="text" onChange={(e) => setNome(e.target.value)} />
         </div>
     )
 }

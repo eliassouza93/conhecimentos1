@@ -26,9 +26,6 @@ export default function InicioApi() {
 
         }, 2200);
 
-
-
-
     }, [])
 
 
