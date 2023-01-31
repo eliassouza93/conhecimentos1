@@ -1,59 +1,23 @@
-
-import { useState } from "react"
-import Lista from "./Lista"
+import produtos from './produtos.json'
 
 
 export default function VoltaInicio() {
 
-    const [conta, setConta] = useState(0)
-
-    function contador() {
-        setConta(conta + 1)
-    }
-
-    const Pessoas = [
-        {
-            nome: 'Elias',
-            endereco: 'Rua altamiro guimaraes',
-            numero: 2223
-
-        }, {
-            nome: 'Ana',
-            endereco: 'Rua Meira gomes',
-            numero: 7623
-
-        }, {
-            nome: 'Belas',
-            endereco: 'Rua Dourados buzios',
-            numero: 76553
-
-        }
-    ]
-
-    const [nome, setNome] = useState('')
-    const [guarda, setGuarda] = useState('')
-
-    function mostrar() {
-        setGuarda(nome)
-
-
-    }
-
-
     return (
         <div>
-            <h1>Voltando depois da temporada!</h1>
+            <h2>produtos</h2>
 
-            <button onClick={contador}>Adicionar</button>
+            {produtos.map((produto) => (
+                <div key={produto.id}>
+                    <ul>
+                        <li>ID: {produto.id} </li>
+                        <li >Produto: {produto.description}</li>
+                        <li >Nome: {produto.name}</li>
+                        <li >Preço: {produto.price}</li>
+                    </ul>
 
-            <Lista setPessoas={Pessoas} />
-
-            <h2> {conta} </h2>
-            <label htmlFor="Nome">Nome</label>
-            <input type="text" onChange={(e) => setNome(e.target.value)} />
-
-            <button onClick={mostrar}>mostrar nome</button>
-            <h1>{guarda}</h1>
+                </div>
+            ))}
         </div>
     )
 }
