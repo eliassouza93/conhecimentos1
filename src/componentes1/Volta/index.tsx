@@ -1,5 +1,5 @@
-import axios from "axios"
-import { useEffect, useState } from "react"
+
+import { useState } from "react"
 import Lista from "./Lista"
 
 
@@ -33,6 +33,12 @@ export default function VoltaInicio() {
     const [nome, setNome] = useState('')
     const [guarda, setGuarda] = useState('')
 
+    function mostrar() {
+        setGuarda(nome)
+
+
+    }
+
 
     return (
         <div>
@@ -43,8 +49,11 @@ export default function VoltaInicio() {
             <Lista setPessoas={Pessoas} />
 
             <h2> {conta} </h2>
-             <label htmlFor="Nome">Nome</label>   
+            <label htmlFor="Nome">Nome</label>
             <input type="text" onChange={(e) => setNome(e.target.value)} />
+
+            <button onClick={mostrar}>mostrar nome</button>
+            <h1>{guarda}</h1>
         </div>
     )
 }
