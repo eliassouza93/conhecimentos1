@@ -6,7 +6,6 @@ export default function VoltaInicio() {
     return (
         <div>
             <h2>produtos</h2>
-
             {produtos.map((produto) => (
                 <div key={produto.id}>
                     <ul>
@@ -15,7 +14,6 @@ export default function VoltaInicio() {
                         <li >Nome: {produto.name}</li>
                         <li >Preço: {produto.price}</li>
                     </ul>
-
                 </div>
             ))}
         </div>
