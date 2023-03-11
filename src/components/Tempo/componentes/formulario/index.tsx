@@ -21,6 +21,7 @@ export default function Formulario1({ setTarefas }: { setTarefas: React.Dispatch
     function adicionarTarefa(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault()
         setTarefas(tarefasAntigas => [...tarefasAntigas, { ...tudo }])
+      
 
     }
 
@@ -55,6 +56,7 @@ export default function Formulario1({ setTarefas }: { setTarefas: React.Dispatch
                 </div>
 
                 <Botao type="submit" texto="Adicionar" />
+              
 
 
             </form>

@@ -1,6 +1,7 @@
 
 
-import VoltaInicio from 'componentes1/Volta';
+
+import Temporizador from 'components/Temporizador';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
@@ -10,7 +11,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <VoltaInicio />
+    <Temporizador />
   </React.StrictMode>
 );
 
