@@ -1,7 +1,6 @@
 
 
-
-import Temporizador from 'components/Temporizador';
+import HomeTarefas from 'componentes1/componentes2/Home';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
@@ -11,7 +10,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Temporizador />
+    <HomeTarefas />
   </React.StrictMode>
 );
 
