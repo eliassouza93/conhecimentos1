@@ -1,6 +1,7 @@
 
 
-import HomeTarefas from 'componentes1/componentes2/Home';
+
+import Inicio222 from 'componentes2';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
@@ -10,7 +11,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <HomeTarefas />
+    <Inicio222 />
   </React.StrictMode>
 );
 
