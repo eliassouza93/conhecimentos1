@@ -1,22 +1,16 @@
 import { useState } from "react"
+import Formulario from "./Formulario"
+import Lista from "./Lista"
 
 
 export default function Inicio222() {
 
-    const [elemento, setElemento] = useState(0)
-
-    const clicar = () => {
-        setElemento(elemento + 1)
-    }
+    const [autentica, setAutentica] = useState([])
 
     return (
         <div>
-            <h1>Inicio 222</h1>
-
-
-            <button onClick={clicar}   >clicar</button>
-
-            <h1> {elemento} </h1>
+            <Formulario setAutentica={setAutentica}  />
+            <Lista Autentica={autentica} />
         </div>
     )
 }
